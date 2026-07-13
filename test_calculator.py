@@ -9,6 +9,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculate("subtract", 5, 2), 3)
 
     # [INSTRUCTION] Teams: Add your test cases directly below this line!
-
+    def test_multiply(self):
+        self.assertEqual(calculate("multiply", 3, 4), 12)
 if __name__ == "__main__":
     unittest.main()
