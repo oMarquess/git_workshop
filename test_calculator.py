@@ -12,5 +12,7 @@ class TestCalculator(unittest.TestCase):
     def test_power(self):
         self.assertEqual(calculate("power", 2, 3), 8)
 
+    def test_multiply(self):
+        self.assertEqual(calculate("multiply", 3, 4), 12)
 if __name__ == "__main__":
     unittest.main()
