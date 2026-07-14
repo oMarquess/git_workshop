@@ -9,6 +9,12 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculate("subtract", 5, 2), 3)
 
     # [INSTRUCTION] Teams: Add your test cases directly below this line!
+    def test_divide(self):
+        self.assertEqual(calculate("divide", 8, 2), 4)
+
+    def test_divide_by_zero(self):
+        with self.assertRaises(ValueError):
+            calculate("divide", 5, 0)
     def test_multiply(self):
         self.assertEqual(calculate("multiply", 3, 4), 12)
 if __name__ == "__main__":
