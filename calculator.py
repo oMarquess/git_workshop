@@ -12,5 +12,7 @@ def calculate(op, a, b):
     elif op == "multiply":
         return a * b
     # Make sure to keep the correct indentation level.
+    elif op == "power":
+        return a ** b
     
     raise ValueError(f"Unknown operation: {op}")
