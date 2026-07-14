@@ -9,6 +9,8 @@ def calculate(op, a, b):
         return a - b
     
     # [INSTRUCTION] Teams: Add your new operations directly below this line!
+    elif op == "multiply":
+        return a * b
     # Make sure to keep the correct indentation level.
     elif op == "divide":
         if b == 0:
