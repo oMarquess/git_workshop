@@ -12,5 +12,9 @@ def calculate(op, a, b):
     elif op == "multiply":
         return a * b
     # Make sure to keep the correct indentation level.
+    elif op == "modulo":
+        if b == 0:
+            raise ValueError("Cannot modulo by zero")
+        return a % b
     
     raise ValueError(f"Unknown operation: {op}")
