@@ -10,5 +10,7 @@ def calculate(op, a, b):
     
     # [INSTRUCTION] Teams: Add your new operations directly below this line!
     # Make sure to keep the correct indentation level.
+    elif op == "multiply":
+        return a * b
     
     raise ValueError(f"Unknown operation: {op}")
