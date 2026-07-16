@@ -9,6 +9,10 @@ def calculate(op, a, b):
         return a - b
     
     # [INSTRUCTION] Teams: Add your new operations directly below this line!
+    elif op == "modulo":
+        if b == 0:
+            raise ValueError("Cannot modulo by zero")
+        return a % b
     # Make sure to keep the correct indentation level.
     
     raise ValueError(f"Unknown operation: {op}")
